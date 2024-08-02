@@ -4,10 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Objects-JS</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>Car Information</h1>
+    <button onclick="car.displayInfo()">Display Car Info</button>
+    <pre id="car-info"></pre>
     
+    <h2>Add Driver</h2>
+    <input type="text" id="new-driver" placeholder="Enter driver's name">
+    <button onclick="addDriver()">Add Driver</button>
+    <p id="add-driver-result"></p>
 
-   <script></script>
+    <h2>Check Driver</h2>
+    <input type="text" id="check-driver" placeholder="Enter driver's name">
+    <button onclick="checkDriver()">Check Driver</button>
+    <p id="check-driver-result"></p>
+
+    <h2>Calculate Trip</h2>
+    <input type="number" id="trip-distance" placeholder="Enter distance in km">
+    <button onclick="calculateTrip()">Calculate Trip</button>
+    <pre id="trip-info"></pre>
+
+    <h2>Current Time</h2>
+    <pre id="current-time"></pre>
+
+    <h3>Change Time</h3>
+    <input type="number" id="change-seconds" placeholder="Enter seconds">
+    <button onclick="changeTime('seconds')">Add Seconds</button>
+    <br>
+    <input type="number" id="change-minutes" placeholder="Enter minutes">
+    <button onclick="changeTime('minutes')">Add Minutes</button>
+    <br>
+    <input type="number" id="change-hours" placeholder="Enter hours">
+    <button onclick="changeTime('hours')">Add Hours</button>
+
+    <script src="index.js"></script>
 </body>
 </html>
